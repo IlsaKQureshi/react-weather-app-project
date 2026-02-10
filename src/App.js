@@ -7,7 +7,7 @@ export default function App() {
 
     <div className="App">SheCodes Weather App
       <footer>
-        This project was coded by Ilsa Khurshid Qureshi and is {" "}
+        This project was coded by Ilsa Khurshid Qureshi and is
         <a href="https://github.com/IlsaKQureshi/react-weather-app-project" target="_blank">open-sourced</a>
       </footer></div>)
 }
