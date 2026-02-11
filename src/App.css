@@ -1,0 +1,13 @@
+.App{
+  background-image: linear-gradient(to bottom,#192241, #5e44a4 60%, #9540aa );
+  color: aliceblue;
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  width: 528px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+footer{
+  padding: 20px;
+}

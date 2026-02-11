@@ -1,0 +1,42 @@
+.form-control{
+  background-image: linear-gradient(to right,#192241, #5e44a4 60%, #9540aa );
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.form-control::placeholder{
+  color: antiquewhite;
+}
+
+.Weather input {
+    color: azure;
+    border-radius: 10px;
+    border: 2px solid #5e44a4 ;
+    margin: 20px;
+}
+
+.LocationDate {
+  padding: 20px;
+  text-align: center;
+}
+.LocationDate h2{
+font-size: 18px;
+font-weight: 400;
+}
+
+.WeatherIcon{
+  text-align: center;
+  font-size: 25px;
+}
+
+.Temperature{
+  padding: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 200;
+}
+
+.AirqualityHumidity {
+  margin: 20px;
+}
