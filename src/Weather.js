@@ -11,6 +11,12 @@ export default function Weather() {
 
 
     setWeatherData({
+      city: response.data.city,
+      date: new Date(response.data.time * 1000).toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+      }),
       temp: Math.round(response.data.temperature.current),
       humid: Math.round(response.data.temperature.humidity),
       wind: Math.round(response.data.wind.speed),
@@ -37,18 +43,18 @@ export default function Weather() {
       </form>
 
       <div className="LocationDate">
-        <h2>city</h2>
-        <h2>Wednesday 15:00</h2>
+        <h2>{weatherData.city}</h2>
+        <h2>{weatherData.date}</h2>
       </div>
 
       <div className="WeatherIcon">
-        <ul><li>{weatherData.desc}</li><li>
-          <img src={weatherData.weatherIcon.replace("http://", "https://")}></img>
+        <ul><li className="text-capitalize">{weatherData.desc}</li><li>
+          <img className="icon" src={weatherData.weatherIcon.replace("http://", "https://")}></img>
         </li>
         </ul>
       </div>
 
-      <div className="Temperature">{weatherData.temp}°C</div>
+      <div className="Temperature">{weatherData.temp}<span>°C</span></div>
 
       <div className="AirqualityHumidity row text-center">
         <div className="col-6">

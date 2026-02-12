@@ -12,36 +12,47 @@
     border-radius: 25px;
     border: 2px solid #5e44a4 ;
     margin: 30px auto;
-    padding: 8px 15px;
+    padding: 8px 25px;
 }
 
 .LocationDate {
-  padding: 20px;
+  padding: 20px 0px;
+  margin: 2px auto;
   text-align: center;
 }
 .LocationDate h2{
-font-size: 18px;
+font-size: 17px;
 font-weight: 400;
 }
 
 .WeatherIcon ul{
   text-align: center;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 13px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.WeatherIcon .icon{
+  height: 120px;
 
 }
 
 .Temperature{
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   font-size: 60px;
   font-family: 'Open-sans', sans-serif;
   font-weight: 200;
 }
 
-.AirqualityHumidity {
+.Temperature span {
+  font-weight: 100;
+}
+.AirqualityHumidity h5 {
   margin: 20px;
+  font-weight: 200;
+  font-size: 16px;
 }
