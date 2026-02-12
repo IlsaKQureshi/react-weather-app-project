@@ -1,6 +1,5 @@
 .form-control{
   background-image: linear-gradient(to right,#192241, #5e44a4 60%, #9540aa );
-  border-radius: 20px;
   margin: 20px;
 }
 
@@ -10,9 +9,10 @@
 
 .Weather input {
     color: azure;
-    border-radius: 10px;
+    border-radius: 25px;
     border: 2px solid #5e44a4 ;
-    margin: 20px;
+    margin: 30px auto;
+    padding: 8px 15px;
 }
 
 .LocationDate {
@@ -24,9 +24,14 @@ font-size: 18px;
 font-weight: 400;
 }
 
-.WeatherIcon{
+.WeatherIcon ul{
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
+  font-weight: 100;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
 }
 
 .Temperature{
