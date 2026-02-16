@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./Temperature.css"
+
 
 export default function Temperature(props) {
   const [isCelsius, setIsCelsius] = useState(true);
@@ -28,7 +30,7 @@ export default function Temperature(props) {
       <div>
         <button
           onClick={() => setIsCelsius(true)}
-          disabled={isCelsius} // active button disabled
+          disabled={isCelsius}
         >
           °C
         </button>
