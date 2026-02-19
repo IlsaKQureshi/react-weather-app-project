@@ -12,7 +12,7 @@ export default function Weatherinfo(props) {
       <div className="WeatherIcon">
         <ul>
           <li className="text-capitalize">{props.data.desc}</li>
-          <li><img className="icon" src={props.data.weatherIcon.replace("http://", "https://")}></img>
+          <li><img className="icon" src={props.data.weatherIcon.replace("http://", "https://")} alt={weatherDescription || "weather icon"} ></img>
           </li>
         </ul>
       </div>
