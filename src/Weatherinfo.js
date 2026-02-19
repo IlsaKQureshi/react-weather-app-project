@@ -1,7 +1,6 @@
 import React from "react";
 import Temperature from "./Temperature.js"
 
-
 export default function Weatherinfo(props) {
   return (
     <div className="Weatherinfo">

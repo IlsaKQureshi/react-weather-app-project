@@ -2,6 +2,7 @@ import React, { use, useState } from "react";
 import "./Weather.css";
 import axios from "axios";
 import Weatherinfo from "./Weatherinfo";
+import Forecast from "./Forecast.js"
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({});
@@ -21,10 +22,11 @@ export default function Weather(props) {
       humid: Math.round(response.data.temperature.humidity),
       wind: Math.round(response.data.wind.speed),
       weatherIcon: response.data.condition.icon_url,
-      desc: response.data.condition.description
+      desc: response.data.condition.description,
+      coordinates: response.data.coordinates,
+
     })
     setloaded(true)
-    console.log(response.data)
   }
 
   function search() {
@@ -60,6 +62,8 @@ export default function Weather(props) {
       </form>
 
       <Weatherinfo data={weatherData} />
+      <h3 className="ForecastTitle">6 Day Forcast</h3>
+      <Forecast data={weatherData.coordinates} />
     </div>
   } else {
     search()

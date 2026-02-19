@@ -64,3 +64,8 @@ font-weight: 400;
   font-weight: 200;
   font-size: 16px;
 }
+
+.ForecastTitle {
+  padding: 35px 15px;
+  font-size: 25px;
+}

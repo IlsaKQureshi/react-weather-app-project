@@ -1,0 +1,14 @@
+.forecast-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  width: 80px;
+  height: 160px;
+  border-radius: 40px;
+  text-align: center;
+  padding: 15px 10px;
+  color: white;
+}
